@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="areavideo">
+        <video autoplay preload="" muted loop src="assets/video/fundo.mp4"></video>
+        <div class="gre"></div>
+    </div>
     <header>
         <h3>
-            RELAX<SPAn>.XE</SPAn>
+            JDM<SPAn>.XE</SPAn>
         </h3>
         <ul>
             <li>
@@ -27,19 +32,15 @@
         </ul>
     </header>
     <div class="container">
-        <div class="oneindex">
-            <h1>RELAX.XE</h1>
-            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis aperiam inventore aliquam enim at
-                aspernatur fugit consectetur, ea, dolore soluta quam.</h2>
+        <div class="oneindex" >
+            <h1 class="animate__animated animate__fadeIn">JDM<span>.XE</span></h1>
+            <h2 class="animate__animated animate__fadeIn">Simplicidade, fiabilidade e performance.</h2>
             <div class="butons">
-                <button class="blogin" id="blogin">Login</button>
-                <button class="bcadastro" id="bcadastro">Cadastro</button>
+                <button class="blogin" id="blogin" onclick="irlogin()">Login</button>
+                <button class="bcadastro" id="bcadastro" onclick="ircadastro()">Cadastro</button>
             </div>
         </div>
-        <div class="twoindex">
-            <img class="astronautimg" src="assets/astronauta caindo.png" alt="">
-            <img src="assets/melodies.png" alt="">
-        </div>
+
     </div>
 
     <div class="telalogin" id="telalogin">
@@ -65,7 +66,7 @@
 
                 </div>
 
-                <button>Iniciar</button>
+                <button onclick="entrar()">Iniciar</button>
 
             </div>
 
@@ -98,8 +99,8 @@
                     <input type="text" id="sexovalor">
                     <p></p>
                 </div>
-                
-                <button>Cadastrar</button>
+
+                <button onclick="irlogin()">Cadastrar</button>
             </div>
         </div>
     </div>
