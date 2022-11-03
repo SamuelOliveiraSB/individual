@@ -36,30 +36,106 @@ divsfilhas.forEach((div, index) => {
         div.classList.add('animate')
 
         if (index == 0) {
-            imagemdocarro.src = 'assets/cars/Nissan_Skyline_GT-R_VSpec_2_29.webp'
-            nomecarro.innerHTML=`nissan gtr r34`
-            motor.innerHTML=``
-            potencia.innerHTML=``
-            torque.innerHTML=``
+            mudarcarroedescricao(`assets/cars/evo x.png`,`lancer evo X`,` <span id="motor">3.8 Twin turbo V6</span> `,` <span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
         } else if (index == 1) {
-            imagemdocarro.src = 'assets/cars/r35v2.png'
-            nomecarro.innerHTML=`nissan gtr r35`
-            motor.innerHTML=``
-            potencia.innerHTML=``
-            torque.innerHTML=``
+            mudarcarroedescricao(`assets/cars/evo9.png`,`lancer evo IX`,` <span id="motor">2.4 Twin turbo V6</span> `,`<span id="potencia">450 cv (390 kW)</span>`,` <span id="torque">51,72 kgf-m (340 lb·ft)</span>`)
         }
         else if (index == 2) {
-            imagemdocarro.src = 'assets/cars/r35v2.png'
-            nomecarro.innerHTML=`toyota supra mk4`
-            motor.innerHTML=``
-            potencia.innerHTML=``
-            torque.innerHTML=``
+            mudarcarroedescricao(`assets/cars/S15.png`,`SILVIA S15`,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+        }
+        else if (index == 3) {
+            mudarcarroedescricao(`assets/cars/r35v2.png`,`nissan gtr r35`,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+        }
+        else if (index == 4) {
+            mudarcarroedescricao(`assets/cars/Nissan_Skyline_GT-R_VSpec_2_29.webp`,`nissan gtr r34`,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+        }
+        else if (index == 5) {
+            mudarcarroedescricao(`assets/cars/suprav2.png`,`gr supra `,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+        }else if (index == 6) {
+            mudarcarroedescricao(`assets/cars/suprav4.png`,`supra mk4 `,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
         }
 
         
-
+        
     })
 
 
 })
 
+function mudarcarroedescricao(a,b,c,d,e){
+    imagemdocarro.src = a
+    nomecarro.innerHTML= b
+    motor.innerHTML= c
+    potencia.innerHTML= d
+    torque.innerHTML= e
+}
+
+//-----------------
+
+var direita = document.querySelector("#direita").addEventListener('click',()=>{
+
+    if (nomecarro.innerHTML == `lancer evo X` ) {
+        mboll(2)
+        mudarcarroedescricao(`assets/cars/evo9.png`,`lancer evo IX`,` <span id="motor">2.4 Twin turbo V6</span> `,`<span id="potencia">450 cv (390 kW)</span>`,` <span id="torque">51,72 kgf-m (340 lb·ft)</span>`)
+    } else if (nomecarro.innerHTML == `lancer evo IX`) {
+        mboll(3)
+        mudarcarroedescricao(`assets/cars/S15.png`,`SILVIA S15`,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+    }
+    else if (nomecarro.innerHTML == `SILVIA S15`) {
+        mboll(4)
+        mudarcarroedescricao(`assets/cars/r35v2.png`,`nissan gtr r35`,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+    }
+    else if (nomecarro.innerHTML == `nissan gtr r35`) {
+        mboll(5)
+        mudarcarroedescricao(`assets/cars/Nissan_Skyline_GT-R_VSpec_2_29.webp`,`nissan gtr r34`,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+    }
+    else if (nomecarro.innerHTML == `nissan gtr r34`) {
+        mboll(6)
+        mudarcarroedescricao(`assets/cars/suprav2.png`,`gr supra `,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+    }
+    else if (nomecarro.innerHTML == `gr supra`) {
+        mboll(7)
+        mudarcarroedescricao(`assets/cars/suprav4.png`,`supra mk4 `,` <span id="motor">3.8 Twin turbo V6</span> `,`<span id="potencia">572 cv (420 kW)</span>`,` <span id="torque">59,95 kgf-m (430 lb·ft)</span>`)
+    }
+})
+
+function mboll(a){
+    divpai.querySelector('.animate').classList.remove('animate')
+    divpai.querySelector(`#p${a}`).classList.add('animate')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------------------- galery
+
+function trocargalery(){
+    var vd = document.querySelector('video')
+    var ft = document.querySelector('.galery div img')
+    var select = selecttips.value
+
+    if(select == 'v'){
+        ft.style.display = 'none'
+        vd.style.display = 'block'
+        console.log('video')
+    }else if(select == 'f'){
+        vd.style.display = 'none'
+        ft.style.display = 'block'
+        console.log('foto')
+    }
+}

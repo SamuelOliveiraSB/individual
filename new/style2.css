@@ -65,6 +65,8 @@ ion-icon {
     width: 96vw;
     margin-left: 4vw;
     background-color: rgb(62, 171, 218);
+    position: relative;
+    overflow-x: hidden;
 }
 
 .one {
@@ -72,23 +74,38 @@ ion-icon {
     height: 500px;
     display: flex;
     justify-content: space-between;
+    background-image: url(assets/fgv3.jpg);
+    background-position-y: -150px;
+    background-size: cover;
+    position: relative;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(150, 150, 150, 0.272);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 0;
 }
 
 .desc {
     height: 100%;
     width: 45%;
     padding: 5%;
+    position: relative;
+    z-index: 3;
 }
 
 .desc h1 {
     font-size: 40px;
 }
 
-.desc div{
+.desc div {
     margin-top: 10%;
 }
 
-.desc p{
+.desc p {
     margin-top: 8%;
     font-size: 20px;
 }
@@ -96,6 +113,8 @@ ion-icon {
 .slider {
     height: 100%;
     width: 55%;
+    position: relative;
+    z-index: 3;
 }
 
 .divup {
@@ -103,7 +122,7 @@ ion-icon {
     width: 100%;
     display: flex;
     align-items: center;
-    
+
 
 }
 
@@ -114,9 +133,11 @@ ion-icon {
     align-items: center;
     justify-content: center;
     font-size: 40px;
+
 }
+
 .mudar ion-icon {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .imagecars {
@@ -126,10 +147,11 @@ ion-icon {
     align-items: center;
     justify-content: center;
 }
+
 .imagecars img {
     height: 100%;
     width: 100%;
-    
+
 }
 
 .divdown {
@@ -146,13 +168,185 @@ ion-icon {
     width: 10px;
     border-radius: 50%;
     margin: 0px 5px;
-    background-color: rgb(18, 18, 18);
+    background-color: rgba(225, 225, 225, 0.823);
     transition: all;
 
 }
 
-.animate{
+.animate {
     animation: point 1s 0s infinite alternate;
+}
+
+
+@keyframes point {
+    from {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+
+
+
+
+.two {
+    width: 100%;
+    height: 619px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.893);
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+
+}
+
+
+.two h1 {
+    font-size: 5rem;
+    margin: 3% 5% 0% 3%;
+    position: relative;
+
+}
+
+.two .text1 {
+    margin-top: 3%;
+    position: relative;
+
+}
+
+.two .text2 {
+    width: 60%;
+    text-align: justify;
+
+
+
+}
+
+.textiframe {
+    margin-top: 1%;
+    height: 60%;
+    display: flex;
+    position: relative;
+    display: flex;
+
+
+}
+
+iframe {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+
+
+
+
+
+
+
+
+
+
+.tree {
+    height: 1100px;
+    background-image: url(assets/ftwo.png);
+    position: relative;
+
+}
+
+.blurtwo {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.716);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+}
+
+.treecontainerone {
+    height: 50%;
+    background-color: yellow;
+    position: relative;
+    display: flex;
+}
+
+
+
+.treecontainertwo {
+    height: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+select {
+    height: 7%;
+    width: 15%;
+    background-color: rgb(0, 0, 0);
+    color: blueviolet;
+    font-weight: bold;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0% 0% 16% 5%;
+}
+
+select option{
+    margin-top: 5px;
+}
+
+.galery {
+    height: 90%;
+    width: 80%;
+    margin-left: 3%;
+    display: grid;
+    padding: 40px 0px 0px 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.galery div{
+    height: 80%;
+    width: 90%;
+    background-color:transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+.galery div video{
+    height: 200%;
+    width: 200%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    position:absolute;
+
+    
+    
+}
+
+.galery div img{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    
+
 }
 
 
@@ -174,13 +368,7 @@ ion-icon {
 
 
 
-
-
-
-
-
-@keyframes point {
-    from{
-        transform: translateY(-5px);
-    }
+.footer {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.893);
 }
