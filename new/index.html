@@ -72,34 +72,30 @@
             </div>
 
             <div class="inpcadastro" id="opccad">
-                <div>
+                <div class="div_user">
                     <label for="nomevalor">nome</label>
-                    <input type="text" id="nomevalor">
-                    <p></p>
+                    <input type="text" id="nomevalor" class="username">
+                    <p id="alertnome"></p>
                 </div>
 
-                <div>
+                <div  class="div_user">
                     <label for="emailvalor">email</label>
-                    <input type="text" id="emailvalor">
-                    <p></p>
+                    <input type="text" id="emailvalor" class="username">
+                    <p id="alertemail">asdfghjklç</p>
                 </div>
 
-                <div>
+                <div class="div_user">
                     <label for="senhavalor">senha</label>
-                    <input type="text" id="senhavalor">
-                    <p></p>
+                    <input type="text" id="senhavalor" class="username" onkeyup="validareexibir()">
+                    <p id="alertsenha">sdfghjk</p>
                 </div>
 
-                <div>
-                    <label for="idadevalor">idade</label>
-                    <input type="text" id="idadevalor">
-                    <p></p>
+                <div class="div_user">
+                    <label for="csenha">confirmação de senha</label>
+                    <input type="text" id="csenha" class="username">
+                    <p id="alertconfirmasenhaa">sdfghjk</p>
                 </div>
-                <div>
-                    <label for="sexovalor">sexo</label>
-                    <input type="text" id="sexovalor">
-                    <p></p>
-                </div>
+                
 
                 <button onclick="irlogin()">Cadastrar</button>
             </div>

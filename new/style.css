@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: white;
-    text-shadow:  0px 0px 5px  #000000;
+    text-shadow: 0px 0px 5px #000000;
 
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     background-color: rgb(33, 33, 33);
@@ -21,7 +21,7 @@ body{
 
 }
 
-.areavideo{
+.areavideo {
     position: absolute;
     left: 0%;
     top: 0%;
@@ -33,21 +33,21 @@ body{
     justify-content: center;
 }
 
-.gre{
-position: absolute;
-left: 0%;
-top: 0%;
-height: 100vh ;
-width: 100vw;
-background-color: #000000b3;
+.gre {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000b3;
 }
 
-.areavideo video{
+.areavideo video {
     width: 100%;
     height: 190%;
 }
 
-header{
+header {
     position: relative;
     display: flex;
     align-items: center;
@@ -56,16 +56,17 @@ header{
     padding: 0px 2%;
 
 }
-header h3{
-    color: red;
-    text-shadow:  0px 0px 5px  #00000067;
- }
 
-header span{
-   color: white;
+header h3 {
+    color: red;
+    text-shadow: 0px 0px 5px #00000067;
 }
 
-header ul{
+header span {
+    color: white;
+}
+
+header ul {
     width: 10vw;
     height: 90%;
     display: flex;
@@ -77,16 +78,16 @@ header ul{
 }
 
 
-.container{
-height: 90vh;
-width: 100vw;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+.container {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.oneindex{
+.oneindex {
     height: 100%;
     width: 50%;
     display: flex;
@@ -94,35 +95,35 @@ position: relative;
     align-items: center;
 }
 
-h1{
-width: 100%;
-font-size: 5rem;
-text-align: center;
-margin-top: 15%;
-color: red;
-text-shadow:  0px 0px 5px  #00000061;
+h1 {
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 15%;
+    color: red;
+    text-shadow: 0px 0px 5px #00000061;
 
 
 }
 
-h1 span{
+h1 span {
     color: white;
-    text-shadow:  0px 0px 5px  #00000061;
+    text-shadow: 0px 0px 5px #00000061;
 
- }
+}
 
-h2{
+h2 {
     width: 100%;
     font-size: 20px;
     align-items: center;
     font-weight: 400;
-    margin-top:4%;
+    margin-top: 4%;
     text-align: center;
 
 
 }
 
-.butons{
+.butons {
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -130,42 +131,42 @@ h2{
 
 }
 
-.butons button{
+.butons button {
     height: 7vh;
     width: 8vw;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.blogin{
+.blogin {
     background-color: white;
     color: black;
     font-size: 14px;
     font-weight: bold;
     text-shadow: none;
     border: none;
-    box-shadow:0px 0px 10px  #00000032;
+    box-shadow: 0px 0px 10px #00000032;
 }
 
-.blogin:hover{
+.blogin:hover {
     background-color: rgb(217, 216, 216);
-    
+
 }
 
-.bcadastro{
+.bcadastro {
     background-color: transparent;
     color: white;
     font-size: 14px;
     font-weight: bold;
     border: solid 2px white;
-    box-shadow:0px 0px 10px  #00000032;
+    box-shadow: 0px 0px 10px #00000032;
 
 }
 
-.bcadastro:hover{
+.bcadastro:hover {
     background-color: white;
     color: black;
     text-shadow: none;
-    
+
 
 }
 
@@ -177,7 +178,7 @@ h2{
 
 
 
-.telalogin{
+.telalogin {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -190,7 +191,7 @@ h2{
     background-color: #000000d8;
 }
 
-.form{
+.form {
     height: 70%;
     width: 30%;
     background-color: white;
@@ -198,7 +199,7 @@ h2{
     overflow: hidden;
 }
 
-.inplogin{
+.inplogin {
     height: 100%;
     width: 100%;
     display: flex;
@@ -207,26 +208,26 @@ h2{
     padding-top: 20%;
 }
 
-.inplogin label{
+.inplogin label {
     color: #324490;
     text-shadow: none;
 
 }
 
-.div_user{
+.div_user {
     height: 20%;
     width: 70%;
     display: flex;
     flex-direction: column;
 }
 
-.div_senha{
+.div_senha {
     margin-top: 10%;
     height: 20%;
     width: 70%;
 }
 
-.camppass{
+.camppass {
     margin-top: 10px;
     height: 60%;
     width: 100%;
@@ -235,8 +236,8 @@ h2{
 
 }
 
-.icons{
-    background-color:  rgba(29, 1, 187, 0.934);
+.icons {
+    background-color: rgba(29, 1, 187, 0.934);
     width: 20%;
     display: flex;
     align-items: center;
@@ -244,21 +245,22 @@ h2{
     cursor: pointer;
 }
 
-.on, .off{
+.on,
+.off {
     color: black;
     font-size: 28px;
 }
 
-.on{
+.on {
     display: none;
 }
 
 
-.username{
+.username {
     margin-top: 10px;
     height: 60%;
     width: 100%;
-    border:solid 1px #324490;
+    border: solid 1px #324490;
     color: #000000;
     outline: none;
     padding-left: 10px;
@@ -267,33 +269,33 @@ h2{
 
 }
 
-.username:focus{
-    outline: solid 1px  rgb(29, 1, 187);
+.username:focus {
+    outline: solid 1px rgb(29, 1, 187);
     border: none;
     box-shadow: 0px 0px 5px rgb(29, 1, 187);
-    
+
 }
 
-.password:focus{
-    outline: solid 1px  rgb(29, 1, 187);
+.password:focus {
+    outline: solid 1px rgb(29, 1, 187);
     border: none;
     box-shadow: 0px 0px 5px rgb(29, 1, 187);
-    
+
 }
 
-.password{
+.password {
     height: 100%;
     width: 80%;
     color: #000000;
     outline: none;
     padding-left: 10px;
     text-shadow: none;
-    border:solid 1px #324490;
+    border: solid 1px #324490;
 
-    
+
 }
 
-.inplogin button{
+.inplogin button {
     margin-top: 18%;
     height: 12%;
     width: 30%;
@@ -309,10 +311,46 @@ h2{
 
 
 
-.inpcadastro{
-height: 100%;
-width: 100%;
-background-color: #324490;
+.inpcadastro {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.inpcadastro div {
+    height: 20%;
+}
+
+.inpcadastro div input {
+    margin-top: 1%;
+    height: 40%;
+}
+
+.inpcadastro label {
+    color: #324490;
+    text-shadow: none;
+
+}
+
+.inpcadastro div p {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.inpcadastro button {
+    margin-top: 5%;
+    height: 10%;
+    width: 30%;
+    background-color: rgb(29, 1, 187);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
 
 
@@ -322,8 +360,10 @@ background-color: #324490;
 
 
 
+
+
 @keyframes ast {
-    from{
+    from {
         transform: rotate(10deg);
     }
 }
