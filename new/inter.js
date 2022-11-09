@@ -3,6 +3,13 @@ var opcoesdelogin = document.querySelector('#opclog')
 var opcoesdecadastro = document.querySelector('#opccad')
 
 //-------------------------------------------------- cadastro e login
+
+
+function irlogininit() {
+    telalogin.style.display = 'flex'
+    opcoesdelogin.style.display = 'flex'
+}
+
 var nome = ''
 var email = ''
 var senha = ''
@@ -50,7 +57,7 @@ function irlogin() {
 }
 
 function validareexibir() {
-    if (senha ) {
+    if (senha) {
 
     }
 }
@@ -69,6 +76,60 @@ function entrar() {
 }
 
 
+//----------------------------menu lateral
+
+
+
+var ulupnav = document.querySelector('.ulgeral')
+var itenss = document.querySelectorAll('.ulgeral li')
+
+
+itenss.forEach((icon, index) => {
+
+    icon.addEventListener('click', () => {
+        console.log(icon, index)
+
+        ulupnav.querySelector('.iconsup').classList.remove('iconsup')
+        icon.classList.add('iconsup')
+
+    })
+
+
+})
+//------------------------ aba game
+var apagarum = document.querySelector('.one')
+var apagardois = document.querySelector('.two')
+var apagartres = document.querySelector('.tree')
+var apagarfooter = document.querySelector('.footer')
+
+function telagame() {
+    apagarum.style.display = 'none'
+    apagardois.style.display = 'none'
+    apagartres.style.display = 'none'
+    apagarfooter.style.display = 'none'
+}
+function telahome() {
+    apagarum.style.display = 'flex'
+    apagardois.style.display = 'flex'
+    apagartres.style.display = 'block'
+    apagarfooter.style.display = 'flex'
+}
+//---------------------------- aparecer botao sair
+var mostrarexit = document.querySelector('.exit')
+
+function aparecersair() {
+    if (mostrarexit.style.display == 'flex') {
+        mostrarexit.style.display = 'none'
+    } else {
+        mostrarexit.style.display = 'flex'
+    }
+
+}
+//--------------------sair do site
+
+function sairdosite(){
+    window.location.href = "index.html";
+}
 //------------------------------------------------- animacão pra trocar de carro
 
 var divpai = document.querySelector('.divdown')
@@ -186,3 +247,22 @@ function trocargalery() {
         console.log('foto')
     }
 }
+
+//---------------------------- slide de eventos
+
+var areaslide = document.querySelector('.treecontainerone')
+
+setInterval(() => {
+    setTimeout(() => {
+        areaslide.style.transform = "translateX(0%)";
+    }, 0);
+    setTimeout(() => {
+        areaslide.style.transform = "translateX(-33.4%)";
+    }, 12000);
+    setTimeout(() => {
+        areaslide.style.transform = "translateX(-66.7%)";
+    }, 24000);
+}, 30000);
+
+
+

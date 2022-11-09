@@ -13,10 +13,10 @@
 <body>
     <div class="headerlateral">
         <ul class="ulgeral">
-            <li>
+            <li class="iconsup" onclick="telahome()" >
                 <ion-icon name="planet-outline"></ion-icon>
             </li>
-            <li>
+            <li onclick="telagame()">
                 <ion-icon name="game-controller-outline"></ion-icon>
             </li>
         </ul>
@@ -25,12 +25,17 @@
             <li>
                 <ion-icon name="settings-outline"></ion-icon>
             </li>
-            <li>
+            <li onclick="aparecersair()">
                 <ion-icon class="iconperfil" name="person-circle"></ion-icon>
             </li>
 
         </ul>
+        
     </div>
+    
+    
+    
+
     <div class="container">
         <div class="one">
             <div class="blur"></div>
@@ -101,9 +106,7 @@
         </div>
         <div class="tree">
             <div class="blurtwo"></div>
-            <div class="treecontainerone">
 
-            </div>
             <div class="treecontainertwo">
 
                 <select name="" id="selecttips" onchange="trocargalery()">
@@ -114,37 +117,73 @@
 
 
                 <div class="galery">
-                    <div><video id="v1" autoplay muted controls loop src="assets/video/JDM_Edit_ - 10Convert.com.mp4.mp4"></video>
+                    <div><video id="v1"  muted controls loop
+                            src="assets/video/JDM_Edit_ - 10Convert.com.mp4.mp4"></video>
                         <img src="assets/g1.jpeg" alt="">
                     </div>
-                    <div><video id="v2" autoplay muted controls loop src="assets/2.mp4"></video>
+                    <div><video id="v2"  muted controls loop src="assets/2.mp4"></video>
                         <img src="assets/g2.jpeg" alt="">
                     </div>
-                    <div><video id="v3" autoplay muted controls loop src="assets/3.mp4"></video>
+                    <div><video id="v3"  muted controls loop src="assets/3.mp4"></video>
                         <img src="assets/g3.jpeg" alt="">
                     </div>
-                    <div><video id="v4" autoplay muted controls loop src="assets/4.mp4"></video>
+                    <div><video id="v4"  muted controls loop src="assets/4.mp4"></video>
                         <img src="assets/g4.jpeg" alt="">
                     </div>
-                    <div><video id="v5" autoplay muted controls loop src="assets/5.mp4"></video>
+                    <div><video id="v5"  muted controls loop src="assets/5.mp4"></video>
                         <img src="assets/g5.jpeg" alt="">
                     </div>
-                    <div><video id="v6" autoplay muted controls loop src="assets/6.mp4"></video>
+                    <div><video id="v6"  muted controls loop src="assets/6.mp4"></video>
                         <img src="assets/g6.jpeg" alt="">
                     </div>
-                    <div><video id="v7" autoplay muted controls loop src="assets/7.mp4"></video>
+                    <div><video id="v7"  muted controls loop src="assets/7.mp4"></video>
                         <img src="assets/g7.jpeg" alt="">
                     </div>
-                    <div><video id="v8" autoplay muted controls loop src="assets/video/fundo.mp4"></video>
+                    <div><video id="v8"  muted controls loop src="assets/video/fundo.mp4"></video>
                         <img src="assets/g8.jpeg" alt="">
                     </div>
                 </div>
+
+
             </div>
+
+            <h3>Eventos</h3>
+
+
+            <div class="treecontainerone">
+
+                <div class="bevent" id="t1">
+                    
+                    <div class="beventdown">
+                        <p>$150</p>
+                        <button>Comprar ingresso</button>
+                    </div>
+                </div>
+                <div class="bevent" id="t2">
+                    
+                    <div class="beventdown">
+                        <p>$90</p>
+                        <button>Comprar ingresso</button>
+                    </div>
+                </div>
+                <div class="bevent" id="t3">
+                    
+                    <div class="beventdown">
+                        <p>$300</p>
+                        <button>Comprar ingresso</button>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
 
         <div class="footer">
 
         </div>
+
+        <button class="exit" onclick="sairdosite()">sair</button>
     </div>
 </body>
 

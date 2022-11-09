@@ -34,9 +34,39 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     font-size: 20px;
 
+}
+
+.ulgeral li {
+    margin-top: 50%;
+
+}
+
+.exit {
+    position: fixed;
+    bottom:3%;
+    left: 5vw;
+    height: 5%;
+    width: 5%;
+    background-color:  rgba(255, 2, 2, 0.976);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgb(72, 72, 72);
+    display: none;
+    align-items: center;
+    justify-content: center;
+cursor: pointer;
+}
+
+.iconsup {
+    background-color: rgb(47, 47, 47);
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .uloptions {
@@ -209,6 +239,12 @@ ion-icon {
     font-size: 5rem;
     margin: 3% 5% 0% 3%;
     position: relative;
+    background-image: url(assets/ff2.jpg);
+    background-size: contain;
+    background-position-x: -300px;
+    background-position-y: 190px;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
 
 }
 
@@ -255,8 +291,8 @@ iframe {
 
 
 .tree {
-    height: 1100px;
-    background-image: url(assets/ftwo.png);
+    height: 1500px;
+    background-color: rgba(0, 0, 0, 0.893);
     position: relative;
 
 }
@@ -273,10 +309,83 @@ iframe {
 }
 
 .treecontainerone {
-    height: 50%;
-    background-color: yellow;
+    height: 38%;
+    width: 301%;
     position: relative;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(0%);
+    transition: all 1s;
+}
+
+.tree h3 {
+
+
+    font-size: 40px;
+    margin-left: 3%;
+    position: relative;
+    background-image: url(assets/ff2.jpg);
+    background-position-x: -300px;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+
+}
+
+.bevent {
+    height: 100%;
+    width: 100.4%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+
+#t1 {
+    background-image: url(assets/fundo\ jdm\ v2.jpg);
+    background-size: cover;
+}
+
+#t2 {
+    background-image: url(assets/fundo\ jdm.jpg);
+    background-size: cover;
+}
+
+
+#t3 {
+    background-image: url(assets/g1.jpeg);
+    background-size: cover;
+
+}
+
+
+.beventdown {
+    height: 80px;
+    width: 30%;
+    background-color: rgba(20, 20, 20, 0.852);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 8%;
+    right: 3%;
+
+}
+
+.beventdown button {
+    height: 70%;
+    width: 40%;
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
 }
 
 
@@ -302,7 +411,7 @@ select {
     margin: 0% 0% 16% 5%;
 }
 
-select option{
+select option {
     margin-top: 5px;
 }
 
@@ -316,36 +425,37 @@ select option{
     grid-template-rows: 1fr 1fr;
 }
 
-.galery div{
+.galery div {
     height: 80%;
     width: 90%;
-    background-color:transparent;
+    background-color: transparent;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    
+
 }
-.galery div video{
+
+.galery div video {
     height: 200%;
     width: 200%;
     border-radius: 10px;
     cursor: pointer;
     display: block;
-    position:absolute;
+    position: absolute;
 
-    
-    
+
+
 }
 
-.galery div img{
+.galery div img {
     height: 100%;
     width: 100%;
     display: none;
     position: absolute;
-    
+
 
 }
 
@@ -371,4 +481,14 @@ select option{
 .footer {
     height: 200px;
     background-color: rgba(0, 0, 0, 0.893);
+    position: relative;
+}
+
+
+
+
+@keyframes moves {
+    to {
+        transform: translateX(-100%);
+    }
 }
