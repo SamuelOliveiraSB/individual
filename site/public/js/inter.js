@@ -189,15 +189,27 @@ itenss.forEach((icon, index) => {
 var apagarum = document.querySelector('.one')
 var apagardois = document.querySelector('.two')
 var apagartres = document.querySelector('.tree')
+var metrica = document.querySelector('.drymetric')
+
 var apagarfooter = document.querySelector('.footer')
+var four = document.querySelector('.four')
+var five = document.querySelector('.five')
+var six = document.querySelector('.six')
 
 function telagame() {
     apagarum.style.display = 'none'
     apagardois.style.display = 'none'
     apagartres.style.display = 'none'
+    metrica.style.display = 'none'
     apagarfooter.style.display = 'none'
+    four.style.display = 'flex'
+    five.style.display = 'flex'
+    six.style.display = 'flex'
 }
 function telahome() {
+    four.style.display = 'none'
+    five.style.display = 'none'
+    six.style.display = 'none'
     apagarum.style.display = 'flex'
     apagardois.style.display = 'flex'
     apagartres.style.display = 'block'
@@ -322,7 +334,24 @@ function mboll(a) {
 
 
 //---------------------------------------------- galery
-var ft1 = document.querySelector('#f1')
+
+
+
+
+
+function trocargalery() {
+
+
+    var v1 = document.querySelector('#v1')
+    var v2 = document.querySelector('#v2')
+    var v3 = document.querySelector('#v3')
+    var v4 = document.querySelector('#v4')
+    var v5 = document.querySelector('#v5')
+    var v6 = document.querySelector('#v6')
+    var v7 = document.querySelector('#v7')
+    var v8 = document.querySelector('#v8')
+
+    var ft1 = document.querySelector('#f1')
     var ft2 = document.querySelector('#f2')
     var ft3 = document.querySelector('#f3')
     var ft4 = document.querySelector('#f4')
@@ -331,12 +360,10 @@ var ft1 = document.querySelector('#f1')
     var ft7 = document.querySelector('#f7')
     var ft8 = document.querySelector('#f8')
 
+    var selects = selecttips.value
 
-function trocargalery() {
-    
-    var select = selecttips.value
-
-    if (select == 'v') {
+    if (selects == 'v') {
+        console.log('video on')
         ft1.style.display = 'none'
         ft2.style.display = 'none'
         ft3.style.display = 'none'
@@ -346,7 +373,28 @@ function trocargalery() {
         ft7.style.display = 'none'
         ft8.style.display = 'none'
 
-    } else if (select == 'f') {
+        v1.style.display = 'block'
+        v2.style.display = 'block'
+        v3.style.display = 'block'
+        v4.style.display = 'block'
+        v5.style.display = 'block'
+        v6.style.display = 'block'
+        v7.style.display = 'block'
+        v8.style.display = 'block'
+
+    } else {
+
+        console.log('foto on')
+
+        v1.style.display = 'none'
+        v2.style.display = 'none'
+        v3.style.display = 'none'
+        v4.style.display = 'none'
+        v5.style.display = 'none'
+        v6.style.display = 'none'
+        v7.style.display = 'none'
+        v8.style.display = 'none'
+
         ft1.style.display = 'block'
         ft2.style.display = 'block'
         ft3.style.display = 'block'
@@ -355,6 +403,10 @@ function trocargalery() {
         ft6.style.display = 'block'
         ft7.style.display = 'block'
         ft8.style.display = 'block'
+
+
+
+
     }
 }
 
@@ -365,14 +417,102 @@ var areaslide = document.querySelector('.treecontainerone')
 setInterval(() => {
     setTimeout(() => {
         areaslide.style.transform = "translateX(0%)";
+        valor_ingresso.innerHTML = '$280.99'
     }, 0);
     setTimeout(() => {
         areaslide.style.transform = "translateX(-33.4%)";
+        valor_ingresso.innerHTML = '$310,59'
+
     }, 12000);
     setTimeout(() => {
         areaslide.style.transform = "translateX(-66.7%)";
+        valor_ingresso.innerHTML = '$375,70'
+
     }, 24000);
 }, 30000);
+
+
+//--------------------------segunda tela
+
+var areatext = document.querySelector('#txt')
+
+
+var c1 = document.querySelector('#c1').addEventListener('mouseover', () => {
+    areatext.innerHTML = `O carro, produzido na fábrica de Hiroshima da Mazda, teve seu lançamento no Salão de Chicago de 1989, e segue uma filosofia de design denominada Jimba ittai[1] (人馬一体), que significa a união entre cavalo e cavaleiro. Suas principais características são seu pequeno porte, leveza, dinâmica equilibrada e simplicidade. O MX-5 foi desenhado como um sucessor espiritual dos pequenos esportivos ingleses e italianos dos anos 50 e 60, como o Triumph Spitfire e o Fiat Spider.
+
+    O MX-5 está em sua quarta concepção. As gerações são denominadas por códigos de duas letras, a primeira sendo a NA (1989-1997), seguida pelas gerações NB (1998-2005), NC (2005-2015) e pela atual, a ND (2015-Presente).`
+
+})
+var c2 = document.querySelector('#c2').addEventListener('mouseover', () => {
+    areatext.innerHTML = `Pontos positivos: comportamento dinâmico, consumo, dirigibilidade, confiabilidade, espaço interno, acabamento, desempenho. Comentários: estou na segunda forester, nesta versão que comprei "0km" no final de 2019, melhorou muito o motor e cambio, além do conforto interno e conectividade com celular.`
+
+})
+var c3 = document.querySelector('#c3').addEventListener('mouseover', () => {
+    areatext.innerHTML = `Apurado comportamento dinâmico, design leve e um motor que agora se tornou famoso: essas são as três características que fizeram o sucesso do Mazda RX-7, um cupê esportivo que foi produzido por três gerações e foi comercializado pela fabricante de Hiroshima emtre 1978 e 2002.`
+
+})
+var c4 = document.querySelector('#c4').addEventListener('mouseover', () => {
+    areatext.innerHTML = `O Skyline GT-R R34 é uma versão esportiva de grande prestígio do Nissan Skyline. A versão GT-R possui o motor Nissan RB26DETT, de 6 cilindros em linha com biturbo. A sigla GT-R surgiu depois de uma vitória da Nissan em 1964 com o S54 2000 GT-B. Em 1973 o modelo GT-R deixou de ser produzido. 16 anos depois a Nissan traz a sigla GT-R de volta com o modelo Nissan Skyline GT-R R32 com o motor RB26DETT e tração 4WD e um motor de 280 HP. A geração R32, também chamada de Godzila, foi até 1994, ano em que foi substituída pelo R33 que muitos reclamaram devido ao peso e tamanho. Em 1998 o R33 foi substituído pelo R34, o mais perfeito GT-R devido a potencia do R33 e tamanho reduzido próximo ao R32. Sua produção foi interrompida em 2002. Em 2007 a Nissan divulgou o lançamento de um novo modelo GT-R em dezembro após o Tokyo Motor Show com o motor VR38DETT, um motor 3.8 de 6 cilindros em V, dois turbos e 600 HP.`
+
+})
+var c5 = document.querySelector('#c5').addEventListener('mouseover', () => {
+    areatext.innerHTML = `O Nissan Silvia é um coupé esportivo criado pela Nissan. A primeira apresentação do Nissan Silvia ocorreu no Tokyo Motor Show, em setembro de 1964. O modelo apresentado, foi feito a mão, baseado no Fairlady. Esse modelo, o Nissan Silvia CSP311, foi produzido até 1968, com apenas 554 exemplares produzidos. Depois foi produzido o modelo S10, o primeiro Silvia, sobre a plataforma "S". Logo depois vieram os modelos S110 e S12.`
+
+})
+
+
+
+
+//-------------- sortear carro e ver se esta certo
+
+var listacarro = ['supra','miata','gtr','honda civic','','','','','']
+
+var total = 0
+
+function soartearcarro() {
+    var palavra = palavras.value
+
+    var numero = parseInt(1 + Math.random() * 6)
+
+    console.log(numero)
+
+    if (numero == 1) {
+        fotocarrosorteio.src = `assets/supra.png`
+
+    } else if (numero == 2) {
+        fotocarrosorteio.src = `assets/nsx.png`
+
+    }
+    else if (numero == 3) {
+        fotocarrosorteio.src = `assets/gtr.png`
+    }
+    else if (numero == 4) {
+        fotocarrosorteio.src = `assets/Datsun.png`
+
+    }
+    else if (numero == 5) {
+        fotocarrosorteio.src = `assets/miata.png`
+    }
+    else{
+        fotocarrosorteio.src = `assets/hcivic.webp`
+
+    }
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
