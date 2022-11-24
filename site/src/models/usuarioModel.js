@@ -31,8 +31,23 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucao);
 }
 
+
+
+function selectcount() {
+    console.log('fazendo select')
+    var instrucao = `
+    SELECT count(nome) as 'contagem' FROM usuario;
+    `;
+    return database.executar(instrucao);
+}
+
+
+
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
+    selectcount
+    
 };

@@ -57,17 +57,73 @@
 
 }
 
-.exit {
+.aexit {
+    display: none;
     position: fixed;
     bottom: 3%;
     left: 5vw;
-    height: 5%;
-    width: 5%;
+    min-height: 20%;
+    width: 20%;
+    background-color: rgb(14, 14, 14);
+    border-radius: 10px;
+}
+
+.cus {
+    height: 50%;
+    width: 100%;
+    padding: 6px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.imageuser {
+    height: 50px;
+    width: 50px;
+    background-image: url(assets/e1.jpg);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.textoexits {
+    padding-top: 8px;
+    text-align: left;
+    margin-left: 5px;
+    height: 90%;
+}
+
+.nuser {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Online {
+    font-size: 12px;
+    font-weight: 400;
+    color: green;
+    margin-left: 11px;
+
+}
+
+.nuser,
+.online {
+    margin-left: 10px;
+}
+
+.exit {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    height: 20%;
+    width: 30%;
     background-color: rgba(255, 2, 2, 0.976);
     border: none;
     border-radius: 6px;
-    box-shadow: 0px 0px 5px rgb(72, 72, 72);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -95,12 +151,21 @@
     font-size: 20px;
 }
 
+.uloptions img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .iconperfil {
     font-size: 30px;
 }
 
 ion-icon {
     cursor: pointer;
+    cursor: pointer;
+
 }
 
 
@@ -270,7 +335,7 @@ ion-icon {
 }
 
 .two .text2 {
-    width: 60%;
+    width: 80%;
     text-align: justify;
 
 
@@ -302,12 +367,39 @@ iframe {
 
 
 
+.acctexts {
+    height: 900px;
+    background-color: rgb(106, 106, 106);
+    position: relative;
+}
+
+.accup,
+.accdown {
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accup img {
+    height: 70%;
+
+}
+
+
+.accdown img {
+    height: 100%;
+    margin-top: 5%;
+
+}
+
 
 
 
 .tree {
     height: 1400px;
-    background-color: rgba(0, 0, 0, 0.893);
+    background-color: #4e4e4e;
     position: relative;
 
 }
@@ -362,22 +454,22 @@ iframe {
 
 
 #t1 {
-    background-image: url(assets/fundo\ jdm\ v2.jpg);
+    background-image: url(assets/e1.jpg);
     background-size: cover;
+
     backdrop-filter: blur(10px);
 }
 
 #t2 {
-    background-image: url(assets/fundo\ jdm.jpg);
+    background-image: url(assets/e2.jpg);
     background-size: cover;
     backdrop-filter: blur(10px);
-
 
 }
 
 
 #t3 {
-    background-image: url(assets/g1.jpeg);
+    background-image: url(assets/e3.jpg);
     background-size: cover;
     backdrop-filter: blur(10px);
 
@@ -423,15 +515,21 @@ iframe {
     margin-left: 20%;
 }
 
-.infingresso p {
-    color: #000000;
-    margin-top: 10px;
+.infingresso div {
+    width: 90%;
+    display: flex;
+    margin-top: 5%;
 }
 
-.infingresso p span{
+.infingresso div p {
+    color: #000000;
+    margin-left: 5px;
+}
+
+.infingresso div span {
     color: #000000;
     font-weight: bold;
-    }
+}
 
 .ingresso img {
     height: 100px;
@@ -489,6 +587,8 @@ select {
     outline: none;
     border-radius: 5px;
     margin: 0% 0% 16% 5%;
+    cursor: pointer;
+
 }
 
 select option {
@@ -558,7 +658,7 @@ select option {
     height: 400px;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
@@ -579,11 +679,20 @@ select option {
     font-weight: bold;
 }
 
-.drymetric img {
-    height: 60%;
+.drymetric .turbina {
+    transform: rotate(-20deg);
+    height: 40%;
     position: absolute;
-    right: -50px;
-    bottom: -50px;
+    right: -10px;
+    top: 50px;
+}
+
+.drymetric .pont {
+    transform: rotate(20deg);
+    height: 40%;
+    position: absolute;
+    left: -50px;
+    bottom: 10px;
 }
 
 
@@ -608,7 +717,7 @@ select option {
 
 .footer {
     height: 100px;
-    background-color: rgb(17, 16, 16);
+    background-color: rgb(0, 0, 0);
     position: relative;
     display: flex;
     justify-content: center;

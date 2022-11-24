@@ -15,8 +15,4 @@ dataevento varchar(45),
 fkusuario int,
 foreign key (fkusuario) references usuario(idusuario)
 
-
-
-
-
 );

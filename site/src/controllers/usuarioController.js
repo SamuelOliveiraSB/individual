@@ -33,7 +33,7 @@ function entrar(req, res) {
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está indefinida!");
     } else {
-        
+
         usuarioModel.entrar(email, senha)
             .then(
                 function (resultado) {
@@ -74,7 +74,7 @@ function cadastrar(req, res) {
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
     } else {
-        
+
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
         usuarioModel.cadastrar(nome, email, senha)
             .then(
@@ -94,9 +94,101 @@ function cadastrar(req, res) {
     }
 }
 
+
+
+
+
+function fcount(req, res) {
+
+    usuarioModel.selectcount()
+
+        .then(
+            function (resultado) {
+
+                res.json(resultado);
+
+            }
+        )
+}
+
+
+
+
+
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    fcount
+   
+
+}
+
+
+
+
+
+
+
+var listacarros = []
+
+
+function sla(){
+
+    var carro = {
+        motor: in_cm.value,
+        marca: in_grosso
+    }
+
+
+    listacarros.push(carro)
+
+    listacarros[0].motor
+    listacarros[0].carro.marca
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var suamae = {
+    nome: [],
+    peso:[]
+
+}
+
+function sla(){
+
+suamae.nome.push(input.value)
+
+suamae.peso.push(input.value)
+
+
+PIROCA.innerHTML = ` ${suamae.nome[0]} e  ${suamae.peso[0]}      `
+
+
+
 }

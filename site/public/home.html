@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <title>JDM</title>
 </head>
 
-<body>
+<body onload="mostrarmetrica()">
     <div class="headerlateral">
         <ul class="ulgeral">
             <li class="iconsup" onclick="telahome()">
@@ -27,7 +27,7 @@
                 <ion-icon name="settings-outline"></ion-icon>
             </li>
             <li onclick="aparecersair()">
-                <ion-icon class="iconperfil" name="person-circle"></ion-icon>
+                <img src="assets/e1.jpg" alt="">
             </li>
 
         </ul>
@@ -80,7 +80,14 @@
             <h1>JDM</h1>
             <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nemo vero nulla
                 cupiditate libero perspiciatis quis illum id esse nostrum pariatur iusto, non itaque explicabo
-                repellendus eius optio distinctio repudiandae.</p>
+                repellendus eius optio distinctio repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minus, hic quidem porro corporis a, repudiandae nostrum dolor perferendis optio et soluta reiciendis
+                quibusdam sint nobis aperiam ratione, minima maiores doloremque? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Soluta doloribus mollitia pariatur tenetur corrupti sint quibusdam esse quisquam
+                similique! Voluptates minima at dolorum quod dolores aliquam adipisci maiores qui vel! lo Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Nesciunt quod asperiores, magni saepe repudiandae dolor
+                ipsa fugit doloribus cumque beatae! Sequi nesciunt id illo optio explicabo ratione aut nisi aperiam. .
+            </p>
             <div class="textiframe">
                 <p class="text2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit facilis ab impedit quibusdam
@@ -95,7 +102,12 @@
                     consequatur fuga labore doloremque esse, animi expedita laborum repudiandae hic, quidem nihil. Fuga,
                     explicabo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo asperiores illo
                     voluptatum quos, delectus aliquam dicta architecto quas odit vel libero provident eaque! Iste dolore
-                    suscipit eveniet deleniti dolores!
+                    suscipit eveniet deleniti dolores Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                    cupiditate libero tempora minima natus consequatur quos? Quia, sint, consequuntur totam
+                    reprehenderit in eum nam est repellendus voluptatem officia ipsa illum. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Repellat iure, maxime facilis distinctio mollitia deleniti labore
+                    consequatur blanditiis cumque quod quas vero recusandae amet numquam. Ullam deserunt rerum nisi
+                    vero. !
                 </p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6574370.903946722!2d133.41245297214502!3d36.429947898944334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zSmFww6Nv!5e0!3m2!1spt-BR!2sbr!4v1667405977287!5m2!1spt-BR!2sbr"
@@ -104,6 +116,21 @@
             </div>
 
 
+        </div>
+
+        <div class="acctexts">
+            <div class="accup">
+                <img src="assets/up1.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dignissimos, praesentium
+                    deleniti voluptatibus quaerat enim porro at beatae debitis nihil temporibus quis perspiciatis
+                    molestias cumque cupiditate assumenda, laudantium recusandae repellendus?</p>
+            </div>
+            <div class="accdown">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dignissimos, praesentium
+                    deleniti voluptatibus quaerat enim porro at beatae debitis nihil temporibus quis perspiciatis
+                    molestias cumque cupiditate assumenda, laudantium recusandae repellendus?</p>
+                    <img src="assets/dw1.webp" alt="">
+            </div>
         </div>
         <div class="tree">
             <div class="blurtwo"></div>
@@ -161,13 +188,17 @@
 
                 <div class="bevent" id="t1">
                     <div class="ingresso">
-                        <p class="nomeevent">evento</p>
+                        <p class="nomeevent">speednight</p>
                         <div class="infingresso">
-                            <p><span>nome:</span> samuel bryan </p>
-                            <p><span>local 1:</span> jd.primavera nº 21</p>
-                            <p><span>local 2:</span> rua dos rosarios nº 50</p>
-                            <p><span>local 3:</span> jd.eliza maria nº 32</p>
-                            <p><span>código:</span> gafr76dfs65df6sd7f6s8d5765df6</p>
+                            <div><span>nome:</span>
+                                <p id="nomenoingresso1"> samuel bryan </p>
+                            </div>
+                            <div><span>local 1:</span>
+                                <p> jd.primavera nº 21</p>
+                            </div>
+                            <div><span>código:</span>
+                                <p> gafr76dfs65df6sd7f6s8d5765df6</p>
+                            </div>
                         </div>
 
                         <img src="assets/QR-Code.png" alt="">
@@ -176,13 +207,17 @@
 
                 <div class="bevent" id="t2">
                     <div class="ingresso">
-                        <p class="nomeevent">evento</p>
+                        <p class="nomeevent">the fast</p>
                         <div class="infingresso">
-                            <p><span>nome:</span> samuel bryan </p>
-                            <p><span>local 1:</span> jd.primavera nº 21</p>
-                            <p><span>local 2:</span> rua dos rosarios nº 50</p>
-                            <p><span>local 3:</span> jd.eliza maria nº 32</p>
-                            <p><span>código:</span> gafr76dfs65df6sd7f6s8d5765df6</p>
+                            <div><span>nome:</span>
+                                <p id="nomenoingresso2"></p>
+                            </div>
+                            <div><span>local 1:</span>
+                                <p> jd.primavera nº 21</p>
+                            </div>
+                            <div><span>código:</span>
+                                <p> gafr76dfs65df6sd7f6s8d5765df6</p>
+                            </div>
                         </div>
 
                         <img src="assets/QR-Code.png" alt="">
@@ -191,13 +226,17 @@
 
                 <div class="bevent" id="t3">
                     <div class="ingresso">
-                        <p>evento</p>
+                        <p class="nomeevent">redsuns</p>
                         <div class="infingresso">
-                            <p><span>nome:</span> samuel bryan </p>
-                            <p><span>local 1:</span> jd.primavera nº 21</p>
-                            <p><span>local 2:</span> rua dos rosarios nº 50</p>
-                            <p><span>local 3:</span> jd.eliza maria nº 32</p>
-                            <p><span>código:</span> gafr76dfs65df6sd7f6s8d5765df6</p>
+                            <div><span>nome:</span>
+                                <p id="nomenoingresso3"> samuel bryan </p>
+                            </div>
+                            <div><span>local 1:</span>
+                                <p> jd.primavera nº 21</p>
+                            </div>
+                            <div><span>código:</span>
+                                <p> gafr76dfs65df6sd7f6s8d5765df6</p>
+                            </div>
                         </div>
 
                         <img src="assets/QR-Code.png" alt="">
@@ -206,7 +245,7 @@
 
             </div>
             <div class="beventdown">
-                <p id="valor_ingresso">$280.99</p>
+                <p id="valor_ingresso">$280.00</p>
                 <button>Comprar ingresso</button>
             </div>
 
@@ -215,7 +254,7 @@
 
         <div class="drymetric">
             <div class="divmetric">
-                <p class="titlemetrics">23</p>
+                <p class="titlemetrics" id="quanti">0</p>
                 <p>quantidade de usuarios</p>
             </div>
 
@@ -224,9 +263,10 @@
                 <p>quantidade de contas excluidar</p>
             </div>
 
-            <img src="assets/turbina.png" alt="">
+            <img class="turbina" src="assets/turbina.png" alt="">
+            <img class="pont" src="assets/ponteiras.png" alt="">
 
-            
+
         </div>
 
 
@@ -234,36 +274,30 @@
             <div class="containercarta">
                 <div class="carta" id="c1">
                     <div class="frente">
-                        <img src="assets/carta.png" alt="">
-                    
                     </div>
 
                     <div class="tras"><img src="assets/g1.jpeg" alt=""></div>
                 </div>
                 <div class="carta" id="c2">
                     <div class="frente">
-                        <img src="assets/carta.png" alt="">
                     </div>
 
                     <div class="tras"><img src="assets/g2.jpeg" alt=""></div>
                 </div>
                 <div class="carta" id="c3">
                     <div class="frente">
-                        <img src="assets/carta.png" alt="">
                     </div>
 
                     <div class="tras"><img src="assets/g3.jpeg" alt=""></div>
                 </div>
                 <div class="carta" id="c4">
                     <div class="frente">
-                        <img src="assets/carta.png" alt="">
                     </div>
 
                     <div class="tras"><img src="assets/g4.jpeg" alt=""></div>
                 </div>
                 <div class="carta" id="c5">
                     <div class="frente">
-                        <img src="assets/carta.png" alt="">
                     </div>
 
                     <div class="tras"><img src="assets/silvia.webp" alt=""></div>
@@ -277,22 +311,31 @@
         </div>
 
         <div class="five">
+            <h1>lista de carros em um determinado intervalo</h1>
 
-            
+            <div class="contfive">
+                <div>
+                    <input type="text" id="dee" placeholder="De">
+                    <input type="text" name="" id="atee" placeholder="Até">
+                </div>
+                <button onclick="verificar()">verificar</button>
+
+            </div>
+            <div id="campo">
+
+            </div>
+
 
         </div>
 
         <div class="six">
 
-            <img id="fotocarrosorteio" src="" alt="">
-            <div>
-                <input type="text" placeholder="nome do carro" id="palavras">
-                <button onclick="soartearcarro()">verificar</button>
-            </div>
-            
+            <img id="fotocarrosorteio" src="assets/cars/evo x.png" alt="">
+
+
         </div>
 
-        
+
 
         <div class="footer">
             <div class="tfooter">
@@ -319,7 +362,20 @@
 
         </div>
 
-        <button class="exit" onclick="sairdosite()">sair</button>
+
+        <div class="aexit" onload="mostrarnome()">
+            <div class="cus">
+                <div class="imageuser"></div>
+                <div class="textoexits">
+                    <p class="nuser" id="nusuario">adm</p>
+                    <p class="Online">online</p>
+                </div>
+
+            </div>
+            <button class="exit" onclick="sairdosite()">sair</button>
+        </div>
+
+
     </div>
 </body>
 

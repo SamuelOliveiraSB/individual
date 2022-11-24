@@ -48,10 +48,13 @@ function executar(instrucao) {
             conexao.connect();
             conexao.query(instrucao, function (erro, resultados) {
                 conexao.end();
+
+                console.log('v1')
                 if (erro) {
                     reject(erro);
                 }
                 console.log(resultados);
+                console.log('esse de cima')
                 resolve(resultados);
             });
             conexao.on('error', function (erro) {
