@@ -262,10 +262,9 @@ header ul li {
 .off {
     color: black;
     font-size: 28px;
-}
+    position: absolute;
+    display: block;
 
-.on {
-    display: none;
 }
 
 

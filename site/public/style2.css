@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Handel Gothic BT';
+    src: url('../public/assets/Handel-Gothic-BT/HANDGOTN.TTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'FallingSky';
+    src: url('../public/assets/Falling-Sky-SemiBold/FallingSky.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HARLOWSI';
+    src: url('../public/assets/HARLOWSI.TTF') format('opentype');
+}
 
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     color: white;
 
 }
@@ -59,17 +75,30 @@
 
 .aexit {
     display: none;
+    flex-direction: column;
     position: fixed;
+    z-index: 10;
     bottom: 3%;
     left: 5vw;
     min-height: 20%;
     width: 20%;
     background-color: rgb(14, 14, 14);
     border-radius: 10px;
+    transition: all 1s ease-in;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.aexit a {
+    color: #006598;
+    margin-top: 28px;
+    margin-left: 18px;
+    font-size: 12px;
+
 }
 
 .cus {
-    height: 50%;
+    height: 65px;
     width: 100%;
     padding: 6px 0px 0px 20px;
     display: flex;
@@ -81,7 +110,7 @@
 .imageuser {
     height: 50px;
     width: 50px;
-    background-image: url(assets/e1.jpg);
+    background-image: url(assets/g4.jpeg);
     background-size: cover;
     overflow: hidden;
     border-radius: 50%;
@@ -109,6 +138,13 @@
 
 }
 
+#mcompras{
+    display: none;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+
 .nuser,
 .online {
     margin-left: 10px;
@@ -118,7 +154,7 @@
     position: absolute;
     bottom: 5%;
     right: 5%;
-    height: 20%;
+    height: 30px;
     width: 30%;
     background-color: rgba(255, 2, 2, 0.976);
     border: none;
@@ -188,6 +224,7 @@ ion-icon {
     background-position-y: -150px;
     background-size: cover;
     position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 
 .blur {
@@ -306,11 +343,11 @@ ion-icon {
     width: 100%;
     height: 619px;
     position: relative;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     padding: 2%;
-
+font-family: 'roboto', sans-serif;
 
 }
 
@@ -320,9 +357,9 @@ ion-icon {
     margin: 3% 5% 0% 3%;
     position: relative;
     background-image: url(assets/ff2.jpg);
-    background-size: contain;
-    background-position-x: -300px;
-    background-position-y: 190px;
+    background-size: cover;
+    background-position-x: 300px;
+    background-position-y: -190px;
     -webkit-background-clip: text;
     color: rgba(0, 0, 0, 0);
 
@@ -331,6 +368,7 @@ ion-icon {
 .two .text1 {
     margin-top: 3%;
     position: relative;
+    text-align: justify;
 
 }
 
@@ -368,10 +406,38 @@ iframe {
 
 
 .acctexts {
-    height: 900px;
-    background-color: rgb(106, 106, 106);
+    height: 800px;
+    background-color: #000000;
     position: relative;
+
 }
+
+.accup div,
+.accdown div {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-top: 10%;
+    font-family: 'Handel Gothic BT';
+}
+
+.accdown div {
+    margin-right: 20%;
+}
+
+.titleacc {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFC000;
+    font-family: 'HARLOWSI';
+
+}
+
 
 .accup,
 .accdown {
@@ -380,18 +446,25 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
 }
 
 .accup img {
-    height: 70%;
+    height: 130%;
 
 }
 
 
 .accdown img {
-    height: 100%;
-    margin-top: 5%;
+    height: 120%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
 
+}
+
+.accdown p {
+    margin-right: 34%;
 }
 
 
@@ -415,7 +488,7 @@ iframe {
 }
 
 .treecontainerone {
-    height: 38%;
+    height: 50%;
     width: 301%;
     position: relative;
     display: flex;
@@ -426,19 +499,7 @@ iframe {
     transition: all 1s;
 }
 
-.tree h3 {
 
-
-    font-size: 40px;
-    margin-top: 9.3%;
-    margin-left: 4%;
-    position: relative;
-    background-image: url(assets/ff2.jpg);
-    background-position-x: -300px;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0);
-
-}
 
 .bevent {
     height: 100%;
@@ -448,7 +509,7 @@ iframe {
     flex-direction: column;
     align-items: center;
     position: relative;
-
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -553,6 +614,7 @@ iframe {
     position: absolute;
     bottom: 3%;
     right: 6%;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -662,6 +724,7 @@ select option {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 .divmetric {
@@ -745,11 +808,97 @@ select option {
     margin-top: 10px;
 }
 
+.telaalert{
+    position: fixed;
+    z-index: 7;
+    right: 0%;
+    top: 0%;
+    height: 100%;
+    width: 96vw;
+    background-color: #1d1d1d75;
+    backdrop-filter: blur(15px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.alerta{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: #4e4e4e6e;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.813);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.alerta img{
+    
+    height:30%;
+    width: 30%;
+    margin-top: 10%;
+    
+
+}
+
+
+.textdealerta{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+
+
+}
+
+.textdealerta h3{
+font-weight: bold;
+font-size: 35px;
+}
+
+.obscompra{
+font-weight: bold;
+font-size: 15px;
+}
+
+.obscompra span{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.carregar{
+    background-image: url(assets/cv2.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: movecarregar 2s infinite;
+
+}
+
+
 
 
 
 @keyframes moves {
     to {
         transform: translateX(-100%);
+    }
+}
+
+@keyframes movecarregar {
+    to {
+        transform: rotate(360deg);
     }
 }
