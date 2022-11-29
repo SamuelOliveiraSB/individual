@@ -598,7 +598,7 @@ function verificar() {
 
             if (listacarros.ano[cont] >= de && listacarros.ano[cont] <= ate) {
 
-                campo.innerHTML += `º${listacarros.nome[cont]} foi lançado em ${listacarros.ano[cont]}<br>`
+                campo.innerHTML += `<ion-icon name="star"></ion-icon>  ${listacarros.nome[cont]} foi lançado em ${listacarros.ano[cont]}<br>`
 
                 carroslistados++
 

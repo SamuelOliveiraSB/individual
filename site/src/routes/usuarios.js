@@ -28,5 +28,4 @@ router.get("/puxarmetrica", function (req, res) {
 });
 
 
-
 module.exports = router;
